@@ -27,7 +27,18 @@
     <link rel="stylesheet" href="assets/css/Wave-Animation-Circle-and-Square.css">
     <link rel="stylesheet" href="assets/css/Waves---DentalTech.css">
 </head>
+<button class="open-zammad-chat">Chat with us</button>
 
+<script src="https://support.skybloxsystems.com/assets/chat/chat-no-jquery.min.js"></script>
+<script>
+(function() {
+  new ZammadChat({
+    fontSize: '12px',
+    chatId: 1,
+    show: false
+  });
+})();
+</script>
 <body style="background: rgb(4,1,28);text-align: left;border-color: rgb(255,255,255);color: rgb(255,255,255);">
     <nav class="navbar navbar-expand-md bg-dark py-3 navbar-dark" style="background: linear-gradient(black, #04011c 0%);">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: rgb(120,120,117);"><i class="fa fa-ticket"></i></span><span>Ticket Bot</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
